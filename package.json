@@ -1,0 +1,53 @@
+{
+  "name": "agy-discord-notify",
+  "version": "1.0.0",
+  "description": "Discord notifications for Google Antigravity (AGY). A zero-dependency skill, CLI, and lifecycle hook that sends messages, file attachments, and rich embeds to a Discord webhook.",
+  "bin": {
+    "agy-discord-notify": "bin/cli.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin/",
+    "skill/",
+    "!skill/config.json"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "antigravity",
+    "agy",
+    "antigravity-skill",
+    "agent-skill",
+    "skill",
+    "discord",
+    "discord-webhook",
+    "discord-notification",
+    "discord-bot",
+    "webhook",
+    "notify",
+    "notification",
+    "notifications",
+    "alerts",
+    "push-notification",
+    "cli",
+    "terminal",
+    "nodejs",
+    "zero-dependency",
+    "devtools",
+    "build-notifications"
+  ],
+  "author": "Blake Daniel",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graphite-works/agy-discord-notify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/graphite-works/agy-discord-notify/issues"
+  },
+  "homepage": "https://github.com/graphite-works/agy-discord-notify#readme"
+}
