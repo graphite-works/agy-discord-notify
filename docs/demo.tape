@@ -6,28 +6,26 @@ Set Height 500
 Set Padding 40
 Set Theme "Dracula"
 
-Type "# 1. Basic message to the default channel"
+Hide
+Type "alias agy='./mock_agy.sh'"
+Enter
+Type "clear"
+Enter
+Show
+
+Type "# 1. Natural language instructions"
 Enter
 Sleep 1s
-Type "node ~/.gemini/config/skills/discord-notify/discord_send.js 'Deploy completed successfully!'"
+Type 'agy "Run the test suite and notify me on Discord with the results."'
 Sleep 500ms
 Enter
-Sleep 2s
+Sleep 4s
 Enter
 
-Type "# 2. Piping output directly into Discord"
+Type "# 2. Autonomous long-running goals"
 Enter
 Sleep 1s
-Type "npm test 2>&1 | node ~/.gemini/config/skills/discord-notify/discord_send.js --username 'Test Runner'"
+Type 'agy "/goal Implement authentication, and ping my Discord alerts channel when finished."'
 Sleep 500ms
 Enter
-Sleep 3s
-Enter
-
-Type "# 3. Sending an embed"
-Enter
-Sleep 1s
-Type "node ~/.gemini/config/skills/discord-notify/discord_send.js --embed-title 'Build Passed' --embed-color '#57F287' 'All tests passed'"
-Sleep 500ms
-Enter
-Sleep 3s
+Sleep 4s
