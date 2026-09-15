@@ -7,6 +7,8 @@ Discord notifications for Google Antigravity (AGY). A zero-dependency skill, CLI
 [![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)](https://nodejs.org)
 [![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](package.json)
 
+![Antigravity posting to Discord: test results to the default channel, a screenshot to #work, a silent deploy summary to #alerts, then piped output and a rich embed sent straight from the shell](https://raw.githubusercontent.com/graphite-works/agy-discord-notify/main/docs/demo.gif)
+
 **agy-discord-notify** is an Antigravity (AGY) skill, lifecycle hook, and zero-dependency Node.js CLI tool that sends Discord notifications via webhooks — messages, file attachments, and rich embeds. Long-running autonomous tasks in Antigravity (like `/goal` or heavy builds) mean you shouldn't have to stay tethered to your screen. This skill eliminates the waiting: tell Antigravity *"notify me on Discord when the tests pass"*, or enable the autonomous `Stop` hook to get automatic pings whenever Antigravity finishes working.
 
 ## ✨ Features
