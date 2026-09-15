@@ -7,16 +7,14 @@ Discord notifications for Google Antigravity (AGY). A zero-dependency skill, CLI
 [![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)](https://nodejs.org)
 [![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](package.json)
 
-![Antigravity posting to Discord: test results to the default channel, a screenshot to #work, a silent deploy summary to #alerts, then piped output and a rich embed sent straight from the shell](https://raw.githubusercontent.com/graphite-works/agy-discord-notify/main/docs/demo.gif)
-
-**agy-discord-notify** is an Antigravity (AGY) skill, lifecycle hook, and zero-dependency Node.js CLI tool that sends Discord notifications via webhooks — messages, file attachments, and rich embeds. Long-running autonomous tasks in Antigravity (like `/goal` or heavy builds) mean you shouldn't have to stay tethered to your screen. This skill eliminates the waiting: tell Antigravity *"notify me on Discord when the tests pass"*, or enable the autonomous `Stop` hook to get automatic pings whenever Antigravity finishes working.
+**agy-discord-notify** is an Antigravity (AGY) skill, lifecycle hook, and zero-dependency Node.js CLI tool that sends Discord notifications via webhooks — messages, file attachments, and rich embeds. Long-running autonomous tasks in Antigravity (like `/goal` or heavy builds) mean you shouldn't have to stay tethered to your screen. This skill eliminates the waiting: tell Antigravity _"notify me on Discord when the tests pass"_, or enable the autonomous `Stop` hook to get automatic pings whenever Antigravity finishes working.
 
 ## ✨ Features
 
 - **Zero Dependencies**: Pure Node.js ≥18 using built-in `fetch`, `FormData`, and `Blob`. Nothing to audit but the script itself.
 - **Dual-Scope Installation**: Install globally (`~/.gemini/config/skills/`) or locally to your repository workspace (`.agents/skills/`) so your entire team shares notifications.
 - **Autonomous `Stop` Hook**: Optionally configure an automatic completion ping in `hooks.json` whenever Antigravity finishes a turn or `/goal` session.
-- **Natural-Language Usage**: Once installed, just tell Antigravity what to send and where (e.g., *"notify me on Discord when finished"*).
+- **Natural-Language Usage**: Once installed, just tell Antigravity what to send and where (e.g., _"notify me on Discord when finished"_).
 - **Rich Media & Embeds**: Send up to 10 file attachments per message, plus rich embeds with titles, descriptions, custom accent colors, and inline fields.
 - **Resilient Delivery**: Retries HTTP 429 and 5xx responses with exponential backoff and automatically splits messages over 2000 characters.
 
@@ -38,9 +36,10 @@ Discord notifications for Google Antigravity (AGY). A zero-dependency skill, CLI
 ### Prerequisites
 
 Before you begin, ensure you have the following installed:
+
 - [Node.js](https://nodejs.org) (version 18 or higher)
 - Google Antigravity (AGY) IDE or CLI
-- A Discord webhook URL (from *Server Settings → Integrations → Webhooks → New Webhook*)
+- A Discord webhook URL (from _Server Settings → Integrations → Webhooks → New Webhook_)
 
 ### Using npx
 
@@ -49,6 +48,7 @@ npx agy-discord-notify
 ```
 
 The interactive installer will prompt you to:
+
 1. Choose between Global (`~/.gemini/config/skills/`) or Local (`.agents/skills/`) installation.
 2. Enter your Discord webhook URL.
 3. Configure optional named webhooks (e.g. `work`, `alerts`).
@@ -84,10 +84,10 @@ node ~/.gemini/config/skills/discord-notify/discord_send.js "Deploy completed su
 
 Once installed, you don't need to run CLI commands manually — just speak naturally to Antigravity:
 
-* *"Run the test suite and ping my Discord channel with the results."*
-* *"Send that screenshot to Discord."*
-* *"Post this diff in the work channel."*
-* *"/goal Implement authentication and notify me on Discord when finished."*
+- _"Run the test suite and ping my Discord channel with the results."_
+- _"Send that screenshot to Discord."_
+- _"Post this diff in the work channel."_
+- _"/goal Implement authentication and notify me on Discord when finished."_
 
 ### Command Line Interface
 
@@ -210,6 +210,7 @@ npm test
 ```
 
 Tests exercise:
+
 - Message chunking and boundary limits (2000 chars)
 - Single and multi-attachment limits (up to 10 files, 8MB max combined)
 - Rich embed validations (title, description, hex/decimal color, 25 fields, 6000 chars total)
@@ -245,6 +246,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Getting Help
 
 If you encounter issues:
+
 1. Search [existing issues](https://github.com/graphite-works/agy-discord-notify/issues)
 2. Open a [new issue](https://github.com/graphite-works/agy-discord-notify/issues/new)
 
@@ -255,7 +257,8 @@ If you encounter issues:
 ## 👥 Authors and Acknowledgments
 
 ### Core Team
-- **Blake Daniel** - *Author*
+
+- **Blake Daniel** - _Author_
 
 ---
 
