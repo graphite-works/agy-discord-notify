@@ -1,6 +1,6 @@
 {
   "name": "agy-discord-notify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Discord notifications for Google Antigravity (AGY). A zero-dependency skill, CLI, and lifecycle hook that sends messages, file attachments, and rich embeds to a Discord webhook.",
   "keywords": [
     "antigravity",
@@ -36,6 +36,7 @@
   "license": "MIT",
   "author": "Blake Daniel",
   "type": "module",
+  "main": "bin/cli.js",
   "bin": {
     "agy-discord-notify": "bin/cli.js"
   },
